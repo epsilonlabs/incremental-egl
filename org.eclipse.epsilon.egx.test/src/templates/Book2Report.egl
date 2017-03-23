@@ -1,0 +1,2 @@
+Book title: [%= b.title %]
+Pages: [%= b.pages %]

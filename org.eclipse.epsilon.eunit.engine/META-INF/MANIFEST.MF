@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EUnit Engine
+Bundle-SymbolicName: org.eclipse.epsilon.eunit.engine;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Vendor: Eclipse.org
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.eclipse.epsilon.eunit,
+ org.eclipse.epsilon.eunit.extensions,
+ org.eclipse.epsilon.eunit.operations,
+ org.eclipse.epsilon.internal.eunit.io,
+ org.eclipse.epsilon.internal.eunit.util,
+ org.eclipse.epsilon.internal.eunit.xml
+Require-Bundle: org.eclipse.epsilon.eol.engine,
+ org.eclipse.epsilon.common.dt;resolution:=optional

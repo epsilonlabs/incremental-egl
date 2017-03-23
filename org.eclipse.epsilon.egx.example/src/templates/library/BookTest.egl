@@ -1,0 +1,10 @@
+[%= b.title %]
+[%= testVariable %]
+[%= myVariable %]
+
+[%= Book.all %]
+
+[% for(w in b.author){ %]
+[%= w.name + " " + b.title %]
+pages: [%= b.pages %]
+[% } %]

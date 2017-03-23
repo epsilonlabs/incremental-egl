@@ -1,0 +1,52 @@
+//import "manual-signature.eol";
+
+pre test {
+	var  myVariable = library!Book.all.first().title;
+	var  anotherVariable = "anothervariable";
+	
+	var testVariable = "my test variable";
+	
+	//var collection = Sequence{"test", "variable", new Native("javax.swing.JFrame")};
+	
+}
+
+rule Book2Report
+	transform b : library!Book{
+	
+	parameters {
+	 	var params : new Map;
+	 	params.put("myVariable", myVariable);
+	 	params.put("anotherVariable", anotherVariable);
+	 
+	 	params.put("testVariable", testVariable);
+	 		
+	 	return params;
+	 	}
+	 	
+	template { 
+		return "BookReport.egl";
+		}
+		
+	target : b.title + ".txt"	
+	
+}
+
+rule Library2Report
+	transform l : library!Library{
+	 	
+	template : "LibraryReport.egl"
+		
+	target : "library.txt"	
+	
+}
+
+rule Writer2Report
+	transform w : library!Writer{
+	 	
+	template : "WriterReport.egl"
+		
+	target : w.name + ".txt"	
+	
+}
+
+

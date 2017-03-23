@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="library" xmi:id="_oG_-cDUfEeSBDPGnf2odWQ">
+  <writers xmi:id="_oHAlgDUfEeSBDPGnf2odWQ" name="writer_1" titles="_oHAlhDUfEeSBDPGnf2odWQ _oHAlhTUfEeSBDPGnf2odWQ _oHBMkjUfEeSBDPGnf2odWQ"/>
+  <writers xmi:id="_oHAlgTUfEeSBDPGnf2odWQ" name="writer_2" titles="_oHAlhTUfEeSBDPGnf2odWQ _oHBMkDUfEeSBDPGnf2odWQ"/>
+  <writers xmi:id="_oHAlgjUfEeSBDPGnf2odWQ" name="writer_3" titles="_oHAlhDUfEeSBDPGnf2odWQ _oHBMkTUfEeSBDPGnf2odWQ"/>
+  <writers xmi:id="_oHAlgzUfEeSBDPGnf2odWQ" name="writer_4" titles="_oHBMkDUfEeSBDPGnf2odWQ _oHBMkTUfEeSBDPGnf2odWQ _oHBMkjUfEeSBDPGnf2odWQ"/>
+  <books xmi:id="_oHAlhDUfEeSBDPGnf2odWQ" title="title1" pages="20" category="ScienceFiction" author="_oHAlgDUfEeSBDPGnf2odWQ _oHAlgjUfEeSBDPGnf2odWQ"/>
+  <books xmi:id="_oHAlhTUfEeSBDPGnf2odWQ" title="title2" pages="40" category="ScienceFiction" author="_oHAlgTUfEeSBDPGnf2odWQ _oHAlgDUfEeSBDPGnf2odWQ"/>
+  <books xmi:id="_oHBMkDUfEeSBDPGnf2odWQ" title="title3" pages="60" category="ScienceFiction" author="_oHAlgzUfEeSBDPGnf2odWQ _oHAlgTUfEeSBDPGnf2odWQ"/>
+  <books xmi:id="_oHBMkTUfEeSBDPGnf2odWQ" title="title4" pages="80" category="ScienceFiction" author="_oHAlgjUfEeSBDPGnf2odWQ _oHAlgzUfEeSBDPGnf2odWQ"/>
+  <books xmi:id="_oHBMkjUfEeSBDPGnf2odWQ" title="title5" category="ScienceFiction" author="_oHAlgzUfEeSBDPGnf2odWQ _oHAlgDUfEeSBDPGnf2odWQ"/>
+</Library>

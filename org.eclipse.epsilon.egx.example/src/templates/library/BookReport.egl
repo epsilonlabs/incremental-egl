@@ -1,0 +1,17 @@
+Number of authors in library: [%= Writer.allInstances %]
+Book title: [%= b.title %]
+Pages : [%= b.getPages()%]
+
+Test variable: [%= testVariable %]
+
+Author(s):
+____________________________
+
+[% for(w in b.author){ %]
+[%= w.name + " " + b.title %]
+[% } %]
+
+[% @template
+operation Book getPages() { %]
+	[%= self.pages + 2 %]
+[% } %]

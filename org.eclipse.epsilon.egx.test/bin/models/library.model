@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="library" xmi:id="_yaDD8C2-EeS66LzhisYdyw">
+  <writers xmi:id="_yaIjgS2-EeS66LzhisYdyw" name="writer_2" titles="_yaJxoy2-EeS66LzhisYdyw _yaJxpC2-EeS66LzhisYdyw"/>
+  <writers xmi:id="_yaIjgi2-EeS66LzhisYdyw" name="writer_3" titles="_yaJxoC2-EeS66LzhisYdyw _yaJxoy2-EeS66LzhisYdyw"/>
+  <writers xmi:id="_yaIjgy2-EeS66LzhisYdyw" name="writer_4" titles="_yaJxpC2-EeS66LzhisYdyw"/>
+  <books xmi:id="_yaJxoC2-EeS66LzhisYdyw" title="title1" pages="20" category="ScienceFiction" author="_yaIjgi2-EeS66LzhisYdyw"/>
+  <books xmi:id="_yaJxoy2-EeS66LzhisYdyw" title="title4" pages="80" category="ScienceFiction" author="_yaIjgi2-EeS66LzhisYdyw _yaIjgS2-EeS66LzhisYdyw"/>
+  <books xmi:id="_yaJxpC2-EeS66LzhisYdyw" title="title5" pages="7" category="ScienceFiction" author="_yaIjgS2-EeS66LzhisYdyw _yaIjgy2-EeS66LzhisYdyw"/>
+</Library>

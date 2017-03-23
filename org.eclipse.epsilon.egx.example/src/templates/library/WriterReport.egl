@@ -1,0 +1,5 @@
+
+Book titles: [%= w.titles %]
+Name : [%= w.name %]
+
+

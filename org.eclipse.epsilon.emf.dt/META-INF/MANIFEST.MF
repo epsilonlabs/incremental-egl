@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Epsilon EMF Utilities
+Bundle-SymbolicName: org.eclipse.epsilon.emf.dt;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Vendor: Eclipse.org
+Export-Package: org.eclipse.epsilon.emf.dt
+Require-Bundle: org.eclipse.ui.ide,
+ org.eclipse.epsilon.emc.emf,
+ org.eclipse.epsilon.common.dt
+Bundle-Activator: org.eclipse.epsilon.emf.dt.EmfUtilPlugin
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
