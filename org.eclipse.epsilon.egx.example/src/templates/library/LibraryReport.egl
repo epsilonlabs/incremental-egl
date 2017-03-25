@@ -1,5 +1,0 @@
-Library Report
-*****************************
-[%= Library.all.first.books.first.pages %]
-Number of books in library: [%= Book.all %]
-Number of authors in library: [%= Writer.allInstances %]

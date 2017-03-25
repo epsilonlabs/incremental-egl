@@ -1,8 +1,6 @@
-Number of authors in library: [%= Writer.allInstances %]
+Number of authors in library: [%= Writer.allInstances.size() %]
 Book title: [%= b.title %]
 Pages : [%= b.getPages()%]
-
-Test variable: [%= testVariable %]
 
 Author(s):
 ____________________________
