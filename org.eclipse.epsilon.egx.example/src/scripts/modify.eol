@@ -3,50 +3,10 @@ var titles = Sequence{"Lion & the Hare", "The Alchemist", "The Pirates"};
 var writers = Sequence{"Author A", "Author B", "Author C"};
 
 var library = library!Library.all.first();
-//var book = library.books.first();
-//book.pages = pages.random();
-//book.category = BookCategory#Mystery;
 
-//library.println();
-//book.println();
-
-/*
-var author_1 = library!Writer.all.select(w|w.name == "writer_1");
+var author = library!Writer.all.select(w|w.name == "writer2");
 var book = new library!Book;
 book.title = "new-book";
 book.pages = pages.random();
-book.author.add(author_1.first());
+book.author.add(author.first());
 book.category = BookCategory#ScienceFiction;
-*/
-
-
-//library.books.add(book);
-
-
-var author_1 = library!Writer.all.select(w|w.name == "writer_1");
-
-author_1.name.println();
-delete(author_1.first());
-
-/*
-author_1.println();
-
-var b1 = new library!Book;
-//b1.title = "book1";
-//b1.pages = pages.random();
-
-var b2 = new library!Book;
-//b2.title = "book2";
-//b2.pages = pages.random();
-
-var s = new Sequence();
-s.add(b1);
-s.add(b2);
-author_1.titles.size.println();
-author_1.first.titles.addAll(s);
-author_1.first.titles.size.println();
-
-*/
-
-
-
