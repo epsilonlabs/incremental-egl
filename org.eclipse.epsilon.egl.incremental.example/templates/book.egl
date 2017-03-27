@@ -1,0 +1,10 @@
+Book title: [%= b.title %]
+Pages : [%= b.pages%]
+
+Author(s):
+____________________________
+
+[% for(w in b.author){ %]
+[%= w.name + " " + b.title %]
+[% } %]
+

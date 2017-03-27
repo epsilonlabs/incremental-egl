@@ -1,5 +1,5 @@
-rule Book2Report
-	transform b : library!Book{
+rule Book2Text
+	transform b : Book{
 	 	
 	template { 
 		return "book.egl";

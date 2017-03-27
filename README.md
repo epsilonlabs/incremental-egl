@@ -9,41 +9,65 @@ This is a prototype implementation of Property access traces used in Epsilon Gen
 * Import all projects into your Eclipse workspace
 
 # Quick start
-A minimal example of incremental transformation in the offline mode is provided in the repository: **org.eclipse.epsilon.egx.example** which includes a sample **Library** model. A runner method is provided in *EgxTransformation.java* that executes the transformation in the following order:
-* Loads the Library model and templates: *example.egx* and *BookReport.egl*
+A minimal example of incremental transformation in the offline mode is provided in the **org.eclipse.epsilon.egl.incremental.example** project in the repository. The main method of *IncrementalEgxExample.java* creates a 1-book [library model](help.eclipse.org/juno/topic/org.eclipse.emf.doc/tutorials/clibmod/clibmod.html) and runs a transformation (*templates/example.egx*) that generates one text file per book on it. It then adds one more book to the model and runs the transformation again. In its second execution, the transformation only generates a file for the newly-created book.
+
+```java
+// Create a library model with one book
+ResourceSet resourceSet = new ResourceSetImpl();
+resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", 
+new XMIResourceFactoryImpl());
+Resource resource = resourceSet.createResource(URI.createURI("library.xmi"));
+Library library = LibraryFactory.eINSTANCE.createLibrary();
+Book book = LibraryFactory.eINSTANCE.createBook();
+library.getBooks().add(book);
+book.setTitle("Book1");
+resource.getContents().add(library);
+
+// Run the transformation on the model
+EgxModuleInc egxModule = new EgxModuleInc(new EglFileGeneratingTemplateFactory());
+egxModule.parse(new File("templates/example.egx"));
+InMemoryEmfModel model = new InMemoryEmfModel("M", resource, LibraryPackage.eINSTANCE);
+model.setCachingEnabled(false);
+egxModule.getContext().getModelRepository().addModel(model);
+egxModule.setLaunchConfigName("library-offline-example");
+egxModule.execute();
+
+// Add a second book to the model
+Book book2 = LibraryFactory.eINSTANCE.createBook();
+book2.setTitle("Book2");
+library.getBooks().add(book2);
+
+// Run the transformation again (only a file for the new book will be generated)
+egxModule = new EgxModuleInc(new EglFileGeneratingTemplateFactory());
+egxModule.parse(new File("templates/example.egx"));
+egxModule.getContext().getModelRepository().addModel(model);
+egxModule.setLaunchConfigName("library-offline-example");
+egxModule.execute();
+```
+
+The templates that comprise the transformation are listed below
+
+### example.egx
 ```javascript
-//  example.egx
-rule Book2Report
-  transform b : library!Book {
-	template { 
-		return "BookReport.egl";
-	}
+rule Book2Text 
+	transform b : Book{
+	
+	template : "book.egl";
 	target : "./output/" + b.title + ".txt"
 }
+```
 
-//  BookReport.egl
-Number of authors in library: [%= Writer.allInstances.size() %]
+### book.egl
+```javascript
 Book title: [%= b.title %]
-Pages : [%= b.getPages()%]
+Pages : [%= b.pages%]
 
 Author(s):
 ____________________________
 
-[% for(w in b.author){ %]
+[% for(w in b.author) { %]
 [%= w.name + " " + b.title %]
 [% } %]
-
-[% @template
-operation Book getPages() { %]
-	[%= self.pages + 2 %]
-[% } %]
 ```
-* Executes the transformation
-* Modifies the source model (modify.eol)
-  * Adds a new Book object to the model
-* Re-executes the transformation in the offline mode
-
-
-
 	
   
