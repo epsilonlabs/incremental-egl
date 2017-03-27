@@ -2,7 +2,7 @@ rule Book2Report
 	transform b : library!Book{
 	 	
 	template { 
-		return "BookReport.egl";
+		return "book.egl";
 		}
 		
 	target : "./output/" + b.title + ".txt"

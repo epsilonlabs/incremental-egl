@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="library">
   <Library xmi:id="_oG_-cDUfEeSBDPGnf2odWQ">
-    <writers xmi:id="writer-2" name="writer2" titles="book-2 book-1 /2 /3"/>
+    <writers xmi:id="writer-2" name="writer2" titles="book-2 book-1"/>
     <writers xmi:id="writer-3" name="writer3" titles="book-2"/>
     <writers xmi:id="writer-4" name="writer4" titles="book-1"/>
     <books xmi:id="book-1" title="title1" pages="44" author="writer-2 writer-4"/>
     <books xmi:id="book-2" title="title-2" pages="75" author="writer-2 writer-3"/>
   </Library>
   <Writer xmi:id="writer-5" name="writer5"/>
-  <Book title="new-book" pages="33" category="ScienceFiction" author="writer-2"/>
-  <Book title="new-book" pages="61" category="ScienceFiction" author="writer-2"/>
 </xmi:XMI>

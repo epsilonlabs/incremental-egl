@@ -1,0 +1,10 @@
+Number of authors in library: 4
+Book title: title1
+Pages : 	46
+
+Author(s):
+____________________________
+
+writer2 title1
+writer4 title1
+
