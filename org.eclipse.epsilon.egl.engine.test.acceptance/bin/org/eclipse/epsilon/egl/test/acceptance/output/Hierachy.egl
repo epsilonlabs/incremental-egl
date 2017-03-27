@@ -1,7 +1,0 @@
-[%  
-    var s : String  := 'HierachySubTemplate.egl';
-    var t: Template := TemplateFactory.load(s);
-%]
-Hello world from Template!
-[%=t.process()%]
-Goodbye world from Template!

@@ -17,16 +17,15 @@ Export-Package: org.eclipse.epsilon.egx.incremental;
  org.eclipse.epsilon.egx.incremental.hashing,
  org.eclipse.epsilon.egx.incremental.output;uses:="org.eclipse.epsilon.egl.output,org.eclipse.epsilon.egl.formatter",
  org.eclipse.epsilon.egx.live,
+ org.eclipse.epsilon.egx.manualsignature,
  org.eclipse.epsilon.egx.signature.managers,
- org.eclipse.epsilon.egx.signaturepropertyaccess
-Require-Bundle: org.eclipse.epsilon.egl.engine.h2;bundle-version="1.0.0",
- org.eclipse.epsilon.egl.engine;bundle-version="1.1.0",
+ org.eclipse.epsilon.egx.signaturepropertyaccess,
+ org.eclipse.epsilon.egx.signatures
+Require-Bundle: org.eclipse.epsilon.egl.engine.h2,
+ org.eclipse.epsilon.egl.engine,
  org.eclipse.epsilon.common,
- org.antlr.runtime_3.1.b1;bundle-version="3.1.0",
- org.eclipse.epsilon.eol.engine;bundle-version="1.1.0",
+ org.antlr.runtime_3.1.b1,
+ org.eclipse.epsilon.eol.engine,
  org.eclipse.emf.ecore,
- org.eclipse.epsilon.emc.emf;bundle-version="1.1.0",
+ org.eclipse.epsilon.emc.emf,
  org.eclipse.epsilon.emc.plainxml
-Import-Package: org.eclipse.core.internal.resources,
- org.eclipse.emf.ecore,
- org.eclipse.epsilon.common.parse

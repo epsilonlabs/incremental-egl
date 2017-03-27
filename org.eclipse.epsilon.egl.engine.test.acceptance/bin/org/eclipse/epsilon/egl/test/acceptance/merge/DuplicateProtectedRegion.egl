@@ -1,9 +1,0 @@
-[% out.setContentType('Java'); %]
-
-/* protected region anId on begin */
-First protected region
-/* protected region anId end */
-
-[%=out.startPreserve('anId', false)%]
-Second protected region
-[%=out.stopPreserve()%]

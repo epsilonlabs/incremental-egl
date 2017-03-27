@@ -1,3 +1,0 @@
-[% 
-TemplateFactory.setTemplateRoot('include');
-TemplateFactory.load('NotHere.egl'); %]

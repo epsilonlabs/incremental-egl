@@ -1,2 +1,0 @@
-[%import 'NonExistent.egl'; %]
-This text should never be printed.

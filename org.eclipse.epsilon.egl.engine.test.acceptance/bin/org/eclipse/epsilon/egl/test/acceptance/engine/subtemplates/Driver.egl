@@ -1,2 +1,0 @@
-[%=TemplateFactory.load('first/First.egl').process()%]
-[%=TemplateFactory.load('second/Second.egl').process()%]

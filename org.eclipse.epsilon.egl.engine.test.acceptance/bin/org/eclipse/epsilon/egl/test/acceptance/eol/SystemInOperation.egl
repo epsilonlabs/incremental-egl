@@ -1,4 +1,0 @@
-[% print(); %]
-[% operation print() {
-	System.getOut.print("Running EGL");
-} %]
