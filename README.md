@@ -9,7 +9,7 @@ This is a prototype implementation of Property access traces used in Epsilon Gen
 * Import all projects into your Eclipse workspace
 
 # Quick start
-A minimal example of incremental transformation in the offline mode is provided in the **org.eclipse.epsilon.egl.incremental.example** project in the repository. The main method of *IncrementalEgxExample.java* creates a 1-book [library model](help.eclipse.org/juno/topic/org.eclipse.emf.doc/tutorials/clibmod/clibmod.html) and runs a transformation (*templates/example.egx*) that generates one text file per book on it. It then adds one more book to the model and runs the transformation again. In its second execution, the transformation only generates a file for the newly-created book.
+A minimal example of incremental transformation in the offline mode is provided in the **org.eclipse.epsilon.egl.incremental.example** project in the repository. The main method of *IncrementalEgxExample.java* (illustrated below) creates a 1-book [library model](help.eclipse.org/juno/topic/org.eclipse.emf.doc/tutorials/clibmod/clibmod.html) and runs a transformation (*templates/example.egx*) that generates one text file per book on it. It then adds one more book to the model and runs the transformation again. In its second (incremental) execution, the transformation only generates a file for the newly-created book.
 
 ```java
 // Create a library model with one book
@@ -45,7 +45,7 @@ egxModule.setLaunchConfigName("library-offline-example");
 egxModule.execute();
 ```
 
-The templates that comprise the transformation are listed below
+The templates that comprise the transformation are listed below.
 
 ### example.egx
 ```javascript
