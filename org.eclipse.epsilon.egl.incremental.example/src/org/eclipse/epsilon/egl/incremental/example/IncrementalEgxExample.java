@@ -1,4 +1,4 @@
-package org.eclipse.epsilon.egx.example;
+package org.eclipse.epsilon.egl.incremental.example;
 
 import java.io.File;
 
@@ -11,7 +11,7 @@ import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
 import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 
 
-public class EgxTransformation {
+public class IncrementalEgxExample {
 	
 	protected EgxModuleInc egxModule;
 	private Resource resource;
@@ -28,7 +28,7 @@ public class EgxTransformation {
 	
 	public static void main(String[] args) throws Exception {
 		
-		EgxTransformation transformation = new EgxTransformation();
+		IncrementalEgxExample transformation = new IncrementalEgxExample();
 		
 		transformation.loadEcoreModel();
 		transformation.loadModel();
